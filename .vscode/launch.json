@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/bin/app_demo.exe", // Path to your compiled executable
+            "args": [],
+            "stopAtEntry": true, // Debugger stops at the beginning of main()
+            "cwd": "${workspaceFolder}", // Current working directory for the launched program
+            "environment": [],
+            "externalConsole": false, // Set to true if you want program output/input in a separate console window
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\ProgramData\\mingw64\\mingw64\\bin\\gdb.exe", // <--- Confirmed GDB path
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build Application (Makefile)" // Ensure this task label exactly matches tasks.json
+        }
+    ]
+}
