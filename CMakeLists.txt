@@ -11,6 +11,8 @@ set(CMAKE_C_STANDARD 11)
 # Static libraries are compiled into your executable at build time.
 add_library(my_c_lib STATIC
         src/vector.c
+        src/linked_list.c
+        src/mempool.c
 )
 
 # Now that the 'my_c_lib' target exists, we can add its properties.
