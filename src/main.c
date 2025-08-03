@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h> // For strlen, strcpy
 #include "vector.h" // Include your library's header
 
 int main() {

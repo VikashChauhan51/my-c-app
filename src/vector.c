@@ -1,4 +1,4 @@
-#include "vector.h" // Always include your corresponding header first!
+#include "vector.h" // Include your library's header
 #include <stdio.h>  // For perror, fprintf
 #include <stdlib.h> // For malloc, realloc, free
 #include <string.h> // For memcpy
